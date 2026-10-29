@@ -333,3 +333,23 @@
       line-height: 1.7;
     }
   }
+[data-lucide] {
+  width: 1.15em;
+  height: 1.15em;
+  stroke-width: 1.8;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+
+.menu-toggle svg {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+
+.command-symbol svg,
+.feature-icon svg,
+.step-icon svg,
+.trust-icon svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
