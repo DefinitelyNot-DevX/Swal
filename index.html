@@ -1,0 +1,468 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#100d13">
+  <meta name="description" content="Meet Swal — your friendly little Discord server companion.">
+  <title>Swal — Your friendly server companion</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Swal home">
+      <span class="brand-mark">s<span aria-hidden="true">♥</span></span>
+      <span>swal<span class="brand-period">.</span></span>
+    </a>
+
+    <button class="menu-toggle" type="button"
+      aria-expanded="false" aria-controls="site-nav"
+      aria-label="Open navigation">
+      <i data-lucide="menu" aria-hidden="true"></i>
+    </button>
+
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+      <a href="#features">Features</a>
+      <a href="#commands">Commands</a>
+      <a href="#getting-started">Getting started</a>
+      <a class="nav-cta" href="#invite">Add Swal <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow">
+          <span class="status-dot"></span>
+          YOUR SERVER'S NEW LITTLE FRIEND
+        </div>
+
+        <h1>A little more<br><span class="gradient-text">welcome.</span></h1>
+
+        <p class="hero-description">
+          Meet Swal — the friendly Discord companion that helps your
+          community feel like home. A warm welcome, useful tools,
+          and a little heart in every server.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#invite">
+            Invite Swal <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+          </a>
+          <a class="button button-secondary" href="#features">
+            Get to know me <i data-lucide="arrow-down" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <div class="hero-note">
+          <i data-lucide="heart" aria-hidden="true"></i>
+          Made to help communities feel at home.
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-label="Swal bot preview">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="floating-heart heart-one" aria-hidden="true">
+          <i data-lucide="heart"></i>
+        </div>
+        <div class="floating-heart heart-two" aria-hidden="true">
+          <i data-lucide="sparkles"></i>
+        </div>
+
+        <div class="bot-card">
+          <div class="bot-card-top">
+            <span class="window-dots"><i></i><i></i><i></i></span>
+            <span class="preview-label">A LITTLE PREVIEW</span>
+            <span class="preview-menu" aria-hidden="true">
+              <i data-lucide="ellipsis"></i>
+            </span>
+          </div>
+
+          <div class="chat-area">
+            <div class="chat-date">TODAY, A FRESH START</div>
+
+            <div class="bot-message">
+              <div class="avatar">s<span aria-hidden="true">♥</span></div>
+              <div class="message-content">
+                <div class="message-author">
+                  Swal <span class="bot-badge">BOT</span>
+                  <span class="message-time">just now</span>
+                </div>
+                <div class="message-bubble">
+                  <div class="message-heading">
+                    Hii, Alex! <i data-lucide="heart" aria-hidden="true"></i>
+                  </div>
+                  Welcome to the server! We're so happy you're here.
+                  Make yourself at home.
+                  <i data-lucide="sparkles" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="welcome-embed">
+              <div class="embed-accent"></div>
+              <div>
+                <span class="embed-kicker">A LITTLE REMINDER</span>
+                <strong>You're in good company.</strong>
+                <p>Good communities start with a warm welcome.</p>
+              </div>
+              <i class="embed-heart" data-lucide="heart" aria-hidden="true"></i>
+            </div>
+          </div>
+
+          <div class="bot-card-bottom">
+            <span class="online-indicator"></span>
+            <span>Always happy to help</span>
+            <i class="bottom-heart" data-lucide="heart" aria-hidden="true"></i>
+          </div>
+        </div>
+
+        <div class="floating-pill pill-top">
+          <i data-lucide="sparkles" aria-hidden="true"></i> Here to help
+        </div>
+        <div class="floating-pill pill-bottom">
+          <i data-lucide="heart" aria-hidden="true"></i> Made with care
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip section-wrap" aria-label="Swal highlights">
+      <div class="trust-item">
+        <span class="trust-icon"><i data-lucide="heart" aria-hidden="true"></i></span>
+        <span><strong>Friendly by design</strong><small>A warm personality, always</small></span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon"><i data-lucide="terminal" aria-hidden="true"></i></span>
+        <span><strong>Slash-command powered</strong><small>Clear, simple interactions</small></span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon"><i data-lucide="users" aria-hidden="true"></i></span>
+        <span><strong>Made for communities</strong><small>Tools that keep things moving</small></span>
+      </div>
+    </section>
+
+    <section class="features section-wrap section-block" id="features">
+      <div class="section-heading">
+        <div class="eyebrow">A LITTLE SOMETHING FOR EVERYONE</div>
+        <h2>Small bot.<br><span class="gradient-text">Big heart.</span></h2>
+        <p>Whether your server is brand new or already buzzing, Swal is here to make the little things easier.</p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card feature-card-large">
+          <div class="feature-icon pink-icon"><i data-lucide="heart-handshake" aria-hidden="true"></i></div>
+          <span class="feature-tag">COMMUNITY</span>
+          <h3>First impressions<br>matter.</h3>
+          <p>Give new members a warm hello and let departing members leave with a friendly goodbye.</p>
+          <div class="feature-decoration decoration-heart" aria-hidden="true">
+            <i data-lucide="heart"></i>
+          </div>
+          <div class="feature-bottom-label">WELCOME &amp; GOODBYE</div>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon purple-icon"><i data-lucide="shield-check" aria-hidden="true"></i></div>
+          <span class="feature-tag">MODERATION</span>
+          <h3>Keep things<br>running smoothly.</h3>
+          <p>Useful moderation tools help your team look after the community.</p>
+          <div class="feature-bottom-label">TOOLS FOR YOUR TEAM</div>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon peach-icon"><i data-lucide="badge-check" aria-hidden="true"></i></div>
+          <span class="feature-tag">VERIFICATION</span>
+          <h3>A better way<br>to get started.</h3>
+          <p>Give members a simple verification step before they enter your community.</p>
+          <div class="feature-bottom-label">A SIMPLE FIRST STEP</div>
+        </article>
+
+        <article class="feature-card feature-card-wide">
+          <div class="wide-card-copy">
+            <div class="feature-icon mint-icon"><i data-lucide="sliders-horizontal" aria-hidden="true"></i></div>
+            <span class="feature-tag">SERVER UTILITIES</span>
+            <h3>Less hassle.<br>More hanging out.</h3>
+            <p>From quick checks to server configuration, handy commands keep everyday admin simple.</p>
+            <a class="text-link" href="#commands">Explore the commands <i data-lucide="arrow-right" aria-hidden="true"></i></a>
+          </div>
+          <div class="command-preview" aria-hidden="true">
+            <div><span class="terminal-prompt">/</span> ping <span class="terminal-result">Pong!</span></div>
+            <div><span class="terminal-prompt">/</span> about <span class="terminal-result">A little about me</span></div>
+            <div><span class="terminal-prompt">/</span> help <span class="terminal-result">How can I help?</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="commands-section section-wrap section-block" id="commands">
+      <div class="commands-intro">
+        <div class="eyebrow">YOUR SHORTCUT TO SWAL</div>
+        <h2>Everything you need.<br><span class="gradient-text">One little command.</span></h2>
+        <p>Explore Swal's registered slash commands, from welcoming new members to moderation and server configuration.</p>
+        <div class="command-count">
+          <span class="status-dot"></span>
+          30 commands · Server tools and private commands
+        </div>
+      </div>
+
+      <div class="command-panel">
+        <div class="command-search">
+          <i data-lucide="search" aria-hidden="true"></i>
+          <input id="command-search" type="search"
+            placeholder="Search commands..."
+            aria-label="Search commands">
+        </div>
+
+        <div class="command-tabs" role="tablist" aria-label="Command categories">
+          <button class="command-tab active" type="button" role="tab" aria-selected="true" data-category="all">All</button>
+          <button class="command-tab" type="button" role="tab" aria-selected="false" data-category="community">Community</button>
+          <button class="command-tab" type="button" role="tab" aria-selected="false" data-category="verification">Verification</button>
+          <button class="command-tab" type="button" role="tab" aria-selected="false" data-category="moderation">Moderation</button>
+          <button class="command-tab" type="button" role="tab" aria-selected="false" data-category="utility">Utility</button>
+          <button class="command-tab" type="button" role="tab" aria-selected="false" data-category="private">Private</button>
+        </div>
+
+        <div class="command-list" id="command-list">
+          <article class="command-row" data-category="utility">
+            <div class="command-symbol"><i data-lucide="activity" aria-hidden="true"></i></div>
+            <div class="command-details"><strong>/ping</strong><span>Check if Swal is responding!</span></div>
+            <span class="command-category">UTILITY</span>
+          </article>
+
+          <article class="command-row" data-category="community">
+            <div class="command-symbol"><i data-lucide="message-circle" aria-hidden="true"></i></div>
+            <div class="command-details"><strong>/welcome channel</strong><span>Choose the channel for welcome messages.</span></div>
+            <span class="command-category">COMMUNITY</span>
+          </article>
+          <article class="command-row" data-category="community">
+            <div class="command-symbol"><i data-lucide="message-square" aria-hidden="true"></i></div>
+            <div class="command-details"><strong>/welcome message</strong><span>Customize the welcome message using {user} and {server}.</span></div>
+            <span class="command-category">COMMUNITY</span>
+          </article>
+          <article class="command-row" data-category="community">
+            <div class="command-symbol"><i data-lucide="bell-ring" aria-hidden="true"></i></div>
+            <div class="command-details"><strong>/welcome enable</strong><span>Enable welcome messages.</span></div>
+            <span class="command-category">COMMUNITY</span>
+          </article>
+          <article class="command-row" data-category="community">
+            <div class="command-symbol"><i data-lucide="bell-off" aria-hidden="true"></i></div>
+            <div class="command-details"><strong>/welcome disable</strong><span>Disable welcome messages.</span></div>
+            <span class="command-category">COMMUNITY</span>
+          </article>
+
+          <article class="command-row" data-category="community">
+            <div class="command-symbol"><i data-lucide="log-out" aria-hidden="true"></i></div>
+            <div class="command-details"><strong>/goodbye channel</strong><span>Choose the channel for goodbye messages.</span></div>
+            <span class="command-category">COMMUNITY</span>
+          </article>
+          <article class="command-row" data-category="community">
+            <div class="command-symbol"><i data-lucide="message-square" aria-hidden="true"></i></div>
+            <div class="command-details"><strong>/goodbye message</strong><span>Customize goodbye messages using {user} and {server}.</span></div>
+            <span class="command-category">COMMUNITY</span>
+          </article>
+          <article class="command-row" data-category="community">
+            <div class="command-symbol"><i data-lucide="bell-ring" aria-hidden="true"></i></div>
+            <div class="command-details"><strong>/goodbye enable</strong><span>Enable goodbye messages.</span></div>
+            <span class="command-category">COMMUNITY</span>
+          </article>
+          <article class="command-row" data-category="community">
+            <div class="command-symbol"><i data-lucide="bell-off" aria-hidden="true"></i></div>
+            <div class="command-details"><strong>/goodbye disable</strong><span>Disable goodbye messages.</span></div>
+            <span class="command-category">COMMUNITY</span>
+          </article>
+
+          <article class="command-row" data-category="utility">
+            <div class="command-symbol"><i data-lucide="settings" aria-hidden="true"></i></div>
+            <div class="command-details"><strong>/swalconfig roles</strong><span>Set the role allowed to manage Swal settings.</span></div>
+            <span class="command-category">CONFIG</span>
+          </article>
+
+          <article class="command-row" data-category="verification">
+            <div class="command-symbol"><i data-lucide="settings-2" aria-hidden="true"></i></div>
+            <div class="command-details"><strong>/reqverify setup</strong><span>Configure the verification channel and verified role.</span></div>
+            <span class="command-category">VERIFICATION</span>
+          </article>
+          <article class="command-row" data-category="verification">
+            <div class="command-symbol"><i data-lucide="send" aria-hidden="true"></i></div>
+            <div class="command-details"><strong>/reqverify publish</strong><span>Post the verification panel.</span></div>
+            <span class="command-category">VERIFICATION</span>
+          </article>
+          <article class="command-row" data-category="verification">
+            <div class="command-symbol"><i data-lucide="shield-off" aria-hidden="true"></i></div>
+            <div class="command-details"><strong>/reqverify disable</strong><span>Disable required verification.</span></div>
+            <span class="command-category">VERIFICATION</span>
+          </article>
+          <article class="command-row" data-category="verification">
+            <div class="command-symbol"><i data-lucide="clipboard-check" aria-hidden="true"></i></div>
+            <div class="command-details"><strong>/reqverify status</strong><span>View verification settings.</span></div>
+            <span class="command-category">VERIFICATION</span>
+          </article>
+          <article class="command-row" data-category="verification">
+            <div class="command-symbol"><i data-lucide="refresh-cw" aria-hidden="true"></i></div>
+            <div class="command-details"><strong>/verifyunlock</strong><span>Give a member three fresh verification attempts.</span></div>
+            <span class="command-category">VERIFICATION</span>
+          </article>
+
+          <article class="command-row" data-category="moderation">
+            <div class="command-symbol"><i data-lucide="user-minus" aria-hidden="true"></i></div>
+            <div class="command-details"><strong>/kick</strong><span>Kick a member from the server.</span></div>
+            <span class="command-category">MODERATION</span>
+          </article>
+          <article class="command-row" data-category="moderation">
+            <div class="command-symbol"><i data-lucide="ban" aria-hidden="true"></i></div>
+            <div class="command-details"><strong>/ban</strong><span>Ban a member and optionally delete recent messages.</span></div>
+            <span class="command-category">MODERATION</span>
+          </article>
+          <article class="command-row" data-category="moderation">
+            <div class="command-symbol"><i data-lucide="user-check" aria-hidden="true"></i></div>
+            <div class="command-details"><strong>/unban</strong><span>Unban a user by their Discord ID.</span></div>
+            <span class="command-category">MODERATION</span>
+          </article>
+          <article class="command-row" data-category="moderation">
+            <div class="command-symbol"><i data-lucide="clock" aria-hidden="true"></i></div>
+            <div class="command-details"><strong>/timeout</strong><span>Temporarily timeout a member for up to 28 days.</span></div>
+            <span class="command-category">MODERATION</span>
+          </article>
+          <article class="command-row" data-category="moderation">
+            <div class="command-symbol"><i data-lucide="timer-off" aria-hidden="true"></i></div>
+            <div class="command-details"><strong>/untimeout</strong><span>Remove a member's timeout.</span></div>
+            <span class="command-category">MODERATION</span>
+          </article>
+          <article class="command-row" data-category="moderation">
+            <div class="command-symbol"><i data-lucide="flag" aria-hidden="true"></i></div>
+            <div class="command-details"><strong>/warn</strong><span>Issue a persistent warning to a member.</span></div>
+            <span class="command-category">MODERATION</span>
+          </article>
+          <article class="command-row" data-category="moderation">
+            <div class="command-symbol"><i data-lucide="list" aria-hidden="true"></i></div>
+            <div class="command-details"><strong>/warnings</strong><span>View a member's warning history.</span></div>
+            <span class="command-category">MODERATION</span>
+          </article>
+          <article class="command-row" data-category="moderation">
+            <div class="command-symbol"><i data-lucide="list-x" aria-hidden="true"></i></div>
+            <div class="command-details"><strong>/clearwarnings</strong><span>Clear a member's warning history.</span></div>
+            <span class="command-category">MODERATION</span>
+          </article>
+          <article class="command-row" data-category="moderation">
+            <div class="command-symbol"><i data-lucide="trash-2" aria-hidden="true"></i></div>
+            <div class="command-details"><strong>/purge</strong><span>Bulk-delete 1–100 recent messages in a channel.</span></div>
+            <span class="command-category">MODERATION</span>
+          </article>
+          <article class="command-row" data-category="moderation">
+            <div class="command-symbol"><i data-lucide="messages-square" aria-hidden="true"></i></div>
+            <div class="command-details"><strong>/slowmode</strong><span>Set the channel's message delay.</span></div>
+            <span class="command-category">MODERATION</span>
+          </article>
+          <article class="command-row" data-category="moderation">
+            <div class="command-symbol"><i data-lucide="file-text" aria-hidden="true"></i></div>
+            <div class="command-details"><strong>/modlog</strong><span>Configure the moderation log channel.</span></div>
+            <span class="command-category">MODERATION</span>
+          </article>
+          <article class="command-row" data-category="moderation">
+            <div class="command-symbol"><i data-lucide="history" aria-hidden="true"></i></div>
+            <div class="command-details"><strong>/modlogs</strong><span>View recent stored moderation actions for a member.</span></div>
+            <span class="command-category">MODERATION</span>
+          </article>
+
+          <article class="command-row" data-category="private">
+            <div class="command-symbol"><i data-lucide="circle-help" aria-hidden="true"></i></div>
+            <div class="command-details"><strong>/help</strong><span>See what you can do with Swal. Available in bot DMs.</span></div>
+            <span class="command-category">PRIVATE</span>
+          </article>
+          <article class="command-row" data-category="private">
+            <div class="command-symbol"><i data-lucide="info" aria-hidden="true"></i></div>
+            <div class="command-details"><strong>/about</strong><span>Learn about Swal. Available in bot DMs.</span></div>
+            <span class="command-category">PRIVATE</span>
+          </article>
+          <article class="command-row" data-category="private">
+            <div class="command-symbol"><i data-lucide="terminal" aria-hidden="true"></i></div>
+            <div class="command-details"><strong>/commands</strong><span>List your private commands. Available in bot DMs.</span></div>
+            <span class="command-category">PRIVATE</span>
+          </article>
+        </div>
+
+        <p class="command-empty" id="command-empty" hidden>
+          <i data-lucide="search-x" aria-hidden="true"></i>
+          No commands found. Try another search.
+        </p>
+        <p class="command-footnote">Some commands require server permissions or Swal manager access. Private commands are available in Swal's DMs.</p>
+      </div>
+    </section>
+
+    <section class="getting-started section-wrap section-block" id="getting-started">
+      <div class="section-heading centered-heading">
+        <div class="eyebrow">READY WHEN YOU ARE</div>
+        <h2>Three little steps.<br><span class="gradient-text">That's all.</span></h2>
+        <p>Getting Swal into your community should feel easy.</p>
+      </div>
+
+      <div class="steps-grid">
+        <article class="step-card">
+          <span class="step-number">01</span>
+          <div class="step-icon"><i data-lucide="user-plus" aria-hidden="true"></i></div>
+          <h3>Invite Swal</h3>
+          <p>Add Swal to a server where you have permission to manage bots.</p>
+        </article>
+        <article class="step-card">
+          <span class="step-number">02</span>
+          <div class="step-icon"><i data-lucide="settings-2" aria-hidden="true"></i></div>
+          <h3>Choose your tools</h3>
+          <p>Use the available commands to configure features for your community.</p>
+        </article>
+        <article class="step-card">
+          <span class="step-number">03</span>
+          <div class="step-icon"><i data-lucide="heart" aria-hidden="true"></i></div>
+          <h3>Make yourself at home</h3>
+          <p>You're all set to enjoy a friendlier, more organised server.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="invite-section section-wrap" id="invite">
+      <div class="invite-card">
+        <div class="invite-sparkle sparkle-left" aria-hidden="true"><i data-lucide="sparkles"></i></div>
+        <div class="invite-sparkle sparkle-right" aria-hidden="true"><i data-lucide="heart"></i></div>
+        <div class="invite-mark">s<span aria-hidden="true">♥</span></div>
+        <div class="eyebrow">YOUR SERVER, WITH A LITTLE MORE HEART</div>
+        <h2>Shall we make<br>your server <span class="gradient-text">feel like home?</span></h2>
+        <p>I'd love to meet your community. Let's make everyone feel welcome.</p>
+        <a class="button button-primary invite-button" href="https://discord.com/oauth2/authorize?client_id=1565065471064150137" data-invite-link target="_blank" rel="noopener noreferrer">
+          Invite Swal <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+        </a>
+        <small class="invite-hint">You'll be taken to Discord to choose your server.</small>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-wrap">
+    <a class="brand footer-brand" href="#home">
+      <span class="brand-mark">s<span aria-hidden="true">♥</span></span>
+      <span>swal<span class="brand-period">.</span></span>
+    </a>
+    <p>A little kindness goes a long way. <i data-lucide="heart" aria-hidden="true"></i></p>
+    <div class="footer-links">
+      <a href="#features">Features</a>
+      <a href="#commands">Commands</a>
+      <a href="privacy.html">Privacy</a>
+    </div>
+    <span class="copyright">© <span id="current-year"></span> Swal. Made with care.</span>
+  </footer>
+
+  <script>
+    if (window.lucide) {
+      window.lucide.createIcons();
+    }
+  </script>
+</body>
+</html>
